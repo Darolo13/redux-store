@@ -1,11 +1,13 @@
 import redux, { createStore, combineReducers } from 'redux';
 // reducers
 import ProductReducers from './ProductReducers'
-import CurrentCategoryReducer from './CurrentCategory';
+import CurrentCategoryReducers from './CurrentCategoryReducers';
+import CategoriesReducer from './CategoriesReducers';
 
 rootReducer = combineReducers({
     products: ProductReducers,
-    currentCategory: CurrentCategoryReducer
+    currentCategory: CurrentCategoryReducers,
+    categories: CategoriesReducer
 });
 
 const store = createStore(rootReducer);

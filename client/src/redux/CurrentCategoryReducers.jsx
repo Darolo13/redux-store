@@ -7,7 +7,7 @@ export const SetCurrentCategory = (category) => {
     };
 };
 
-export default function CurrentCategoryReducer(currentCategory = '', { type, payload }) {
+export default function CurrentCategoryReducers(currentCategory = '', { type, payload }) {
     switch(type) {
         case Actions.UPDATE_CURRENT_CATEGORY:
             return payload;
