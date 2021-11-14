@@ -1,1 +1,1 @@
-# redux-store
+# _redux-store_
