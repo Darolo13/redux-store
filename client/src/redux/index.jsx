@@ -1,7 +1,9 @@
 import redux, { createStore, combineReducers } from 'redux';
+// reducers
+import ProductReducers from './ProductReducers'
 
 rootReducer = combineReducers({
-// to be set up
+products: ProductReducers
 });
 
 const store = createStore(rootReducer);
